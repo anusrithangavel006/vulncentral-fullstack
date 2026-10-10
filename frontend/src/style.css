@@ -1,0 +1,27 @@
+:root{--bg:#eef1f5;--card:#fff;--bd:#dde2ea;--tx:#1b2433;--mu:#647086;--nav:#0f1b33;--pr:#2563eb;--c:#dc2626;--h:#ea580c;--m:#ca8a04;--l:#16a34a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1220;--card:#141d30;--bd:#26324a;--tx:#e6ebf5;--mu:#93a0b8}}
+:root[data-theme=dark]{--bg:#0b1220;--card:#141d30;--bd:#26324a;--tx:#e6ebf5;--mu:#93a0b8}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;font:14px/1.5 system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--tx)}
+#app{display:flex;min-height:100vh}nav{width:230px;background:var(--nav);color:#c8d3e8;padding:16px 10px;position:sticky;top:0;height:100vh;overflow:auto;flex-shrink:0}
+nav h1{font-size:15px;color:#fff;margin:0 8px 2px}nav small{display:block;margin:0 8px 14px;color:#7f8fb0;font-size:11px}
+nav a{display:block;padding:8px 10px;border-radius:6px;cursor:pointer;color:#c8d3e8}nav a:hover{background:#1b2b4d}nav a.on{background:var(--pr);color:#fff}
+main{flex:1;min-width:0;padding:20px}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:16px;flex-wrap:wrap}
+h2{margin:0;font-size:20px}h3{margin:0 0 8px;font-size:15px}p.sub{color:var(--mu);margin:2px 0 0}
+.banner{background:#fef3c7;color:#78350f;border:1px solid #fcd34d;border-radius:8px;padding:8px 12px;font-size:12px;margin-bottom:14px}
+.grid{display:grid;gap:14px}.g3{grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px;box-shadow:0 1px 2px rgba(0,0,0,.05)}.card.k{cursor:pointer}.card.k:hover{border-color:var(--pr)}
+.big{font-size:28px;font-weight:700}.mu{color:var(--mu);font-size:12px}
+.bd{display:inline-block;padding:1px 8px;border-radius:99px;font-size:11px;font-weight:600;color:#fff;white-space:nowrap}
+.Critical{background:var(--c)}.High{background:var(--h)}.Medium{background:var(--m)}.Low{background:var(--l)}.nt{background:#64748b}.bl{background:var(--pr)}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--bd);vertical-align:top}th{color:var(--mu);font-size:12px;white-space:nowrap}th.s{cursor:pointer}tr.r{cursor:pointer}tr.r:hover{background:rgba(37,99,235,.07)}
+input,select,button,textarea{font:inherit;padding:6px 10px;border:1px solid var(--bd);border-radius:6px;background:var(--card);color:var(--tx)}button{cursor:pointer}button.p{background:var(--pr);color:#fff;border-color:var(--pr)}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.bar input{flex:1;min-width:160px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:9}.dr{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:var(--card);z-index:10;overflow:auto;padding:18px;padding-top:calc(18px + env(safe-area-inset-top,0px))}
+.dr h4{margin:14px 0 4px;font-size:12px;text-transform:uppercase;color:var(--mu);letter-spacing:.04em}
+.note{background:rgba(37,99,235,.1);border-left:3px solid var(--pr);padding:8px 10px;border-radius:4px;font-size:12px;margin:10px 0}
+.chat{max-height:420px;overflow:auto;display:flex;flex-direction:column;gap:10px;margin-bottom:10px}.u{align-self:flex-end;background:var(--pr);color:#fff;padding:6px 12px;border-radius:12px;max-width:80%}.a{border:1px solid var(--bd);border-radius:10px;padding:10px}
+.chip{display:inline-block;margin:0 6px 6px 0;padding:4px 10px;border:1px solid var(--bd);border-radius:99px;cursor:pointer;font-size:12px}.chip:hover{border-color:var(--pr);color:var(--pr)}
+.flow span{display:inline-block;background:var(--card);border:1px solid var(--bd);padding:6px 10px;border-radius:6px;margin:3px}a.l{color:var(--pr);cursor:pointer;text-decoration:underline}
+.pr{height:10px;background:var(--bd);border-radius:6px;overflow:hidden;display:flex}
+@media(max-width:760px){#app{flex-direction:column}nav{width:100%;height:auto;position:static;display:flex;flex-wrap:wrap;gap:2px}nav h1,nav small{width:100%}nav a{padding:6px 8px;font-size:12px}}
+@media print{nav,.bar,.nop{display:none}}

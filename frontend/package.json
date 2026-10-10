@@ -1,0 +1,9 @@
+{
+  "name": "vulncentral-intelligence",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Frontend for a centralized institutional vulnerability registry and AI-assisted security query interface (sample data).",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build", "preview": "vite preview" },
+  "devDependencies": { "vite": "^5.4.0" }
+}

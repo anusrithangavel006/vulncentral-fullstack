@@ -1,0 +1,537 @@
+{
+ "V": [
+  {
+   "id": "CVE-2024-3094",
+   "t": "XZ Utils backdoor in liblzma",
+   "d": "Malicious code in xz 5.6.0/5.6.1 release tarballs could alter sshd authentication on some Linux builds.",
+   "p": "XZ Utils 5.6.0–5.6.1",
+   "sev": "Critical",
+   "cv": 10,
+   "kev": 0,
+   "dt": "2024-03-29",
+   "src": "NVD",
+   "fix": 1,
+   "as": [
+    "A-03"
+   ],
+   "mit": "Downgrade to 5.4.x or install the distribution-patched package."
+  },
+  {
+   "id": "CVE-2021-44228",
+   "t": "Log4Shell – Apache Log4j JNDI RCE",
+   "d": "Log4j 2 evaluates JNDI lookups in logged strings, allowing remote code execution.",
+   "p": "Apache Log4j 2.0–2.14.1",
+   "sev": "Critical",
+   "cv": 10,
+   "kev": 1,
+   "dt": "2021-12-10",
+   "src": "CISA KEV",
+   "fix": 1,
+   "as": [
+    "A-06",
+    "A-08"
+   ],
+   "mit": "Upgrade to Log4j 2.17.1 or later."
+  },
+  {
+   "id": "CVE-2024-3400",
+   "t": "PAN-OS GlobalProtect command injection",
+   "d": "Unauthenticated command injection in GlobalProtect on specific PAN-OS versions.",
+   "p": "Palo Alto PAN-OS 10.2/11.0/11.1",
+   "sev": "Critical",
+   "cv": 10,
+   "kev": 1,
+   "dt": "2024-04-12",
+   "src": "Vendor Advisory",
+   "fix": 1,
+   "as": [
+    "A-07"
+   ],
+   "mit": "Apply vendor hotfix per advisory."
+  },
+  {
+   "id": "CVE-2023-34362",
+   "t": "MOVEit Transfer SQL injection",
+   "d": "SQL injection in MOVEit Transfer web app enabling unauthenticated access to the database.",
+   "p": "Progress MOVEit Transfer",
+   "sev": "Critical",
+   "cv": 9.8,
+   "kev": 1,
+   "dt": "2023-06-02",
+   "src": "CISA KEV",
+   "fix": 1,
+   "as": [],
+   "mit": "Apply Progress security patches."
+  },
+  {
+   "id": "CVE-2022-22965",
+   "t": "Spring4Shell – Spring Framework RCE",
+   "d": "Data binding flaw on JDK 9+ with Tomcat WAR deployment can allow remote code execution.",
+   "p": "Spring Framework <5.3.18",
+   "sev": "Critical",
+   "cv": 9.8,
+   "kev": 1,
+   "dt": "2022-04-01",
+   "src": "CISA KEV",
+   "fix": 1,
+   "as": [
+    "A-05"
+   ],
+   "mit": "Upgrade to Spring Framework 5.3.18 / 5.2.20."
+  },
+  {
+   "id": "CVE-2024-4577",
+   "t": "PHP-CGI argument injection (Windows)",
+   "d": "Best-fit character conversion permits argument injection and code execution on Windows PHP-CGI.",
+   "p": "PHP 8.1–8.3 (Windows)",
+   "sev": "Critical",
+   "cv": 9.8,
+   "kev": 1,
+   "dt": "2024-06-09",
+   "src": "CISA KEV",
+   "fix": 1,
+   "as": [
+    "A-04"
+   ],
+   "mit": "Upgrade PHP to 8.3.8 / 8.2.20 / 8.1.29 or later."
+  },
+  {
+   "id": "CVE-2023-4966",
+   "t": "Citrix Bleed – NetScaler info disclosure",
+   "d": "Sensitive information disclosure in NetScaler ADC/Gateway can leak session tokens.",
+   "p": "Citrix NetScaler ADC/Gateway",
+   "sev": "Critical",
+   "cv": 9.4,
+   "kev": 1,
+   "dt": "2023-10-10",
+   "src": "CISA KEV",
+   "fix": 1,
+   "as": [],
+   "mit": "Apply vendor fixed builds and terminate active sessions."
+  },
+  {
+   "id": "CVE-2024-6387",
+   "t": "regreSSHion – OpenSSH signal handler race",
+   "d": "Race condition in OpenSSH sshd may allow unauthenticated remote code execution on glibc Linux.",
+   "p": "OpenSSH 8.5p1–9.7p1",
+   "sev": "High",
+   "cv": 8.1,
+   "kev": 0,
+   "dt": "2024-07-01",
+   "src": "NVD",
+   "fix": 1,
+   "as": [
+    "A-03",
+    "A-08"
+   ],
+   "mit": "Upgrade to OpenSSH 9.8p1."
+  },
+  {
+   "id": "CVE-2023-38831",
+   "t": "WinRAR code execution via crafted archive",
+   "d": "Crafted ZIP archives can execute code when a user opens a benign-looking file.",
+   "p": "WinRAR <6.23",
+   "sev": "High",
+   "cv": 7.8,
+   "kev": 1,
+   "dt": "2023-08-23",
+   "src": "CISA KEV",
+   "fix": 1,
+   "as": [
+    "A-01",
+    "A-02"
+   ],
+   "mit": "Update WinRAR to 6.23 or later."
+  },
+  {
+   "id": "CVE-2023-44487",
+   "t": "HTTP/2 Rapid Reset DoS",
+   "d": "HTTP/2 request cancellation can be abused to exhaust server resources.",
+   "p": "HTTP/2 implementations (multiple)",
+   "sev": "High",
+   "cv": 7.5,
+   "kev": 1,
+   "dt": "2023-10-10",
+   "src": "Vendor Advisory",
+   "fix": 1,
+   "as": [
+    "A-04"
+   ],
+   "mit": "Apply vendor patches; add rate limits."
+  },
+  {
+   "id": "CVE-2023-46604",
+   "t": "Apache ActiveMQ RCE",
+   "d": "Deserialization flaw in OpenWire protocol allows remote code execution.",
+   "p": "Apache ActiveMQ <5.15.16",
+   "sev": "Critical",
+   "cv": 10,
+   "kev": 1,
+   "dt": "2023-10-27",
+   "src": "CISA KEV",
+   "fix": 0,
+   "as": [],
+   "mit": "Upgrade ActiveMQ to a fixed release."
+  },
+  {
+   "id": "CVE-2024-21413",
+   "t": "Outlook MonikerLink RCE",
+   "d": "Crafted links can bypass Protected View and lead to code execution in Outlook.",
+   "p": "Microsoft Outlook 2016/2019/365",
+   "sev": "Critical",
+   "cv": 9.8,
+   "kev": 1,
+   "dt": "2024-02-13",
+   "src": "Vendor Advisory",
+   "fix": 1,
+   "as": [
+    "A-02"
+   ],
+   "mit": "Install the February 2024 Microsoft update."
+  }
+ ],
+ "A": [
+  {
+   "id": "A-01",
+   "n": "Lab PC Cluster (CS Dept)",
+   "ty": "Student computers",
+   "sw": "Windows 11 / WinRAR 6.11",
+   "env": "Computer Lab",
+   "up": "2026-10-02",
+   "mt": "Confirmed match",
+   "rs": "Open",
+   "imp": 1
+  },
+  {
+   "id": "A-02",
+   "n": "Faculty Laptops (Admin)",
+   "ty": "Faculty computers",
+   "sw": "Windows 11 / Outlook 365",
+   "env": "Administration",
+   "up": "2026-10-05",
+   "mt": "Possible match – verify",
+   "rs": "In Progress",
+   "imp": 2
+  },
+  {
+   "id": "A-03",
+   "n": "Linux Server LX-01",
+   "ty": "Servers",
+   "sw": "Debian 12 / OpenSSH 9.2",
+   "env": "Data Centre",
+   "up": "2026-10-08",
+   "mt": "Confirmed match",
+   "rs": "Open",
+   "imp": 3
+  },
+  {
+   "id": "A-04",
+   "n": "College Website",
+   "ty": "College website",
+   "sw": "Windows / PHP 8.1.20",
+   "env": "Public Web",
+   "up": "2026-10-06",
+   "mt": "Confirmed match",
+   "rs": "Open",
+   "imp": 3
+  },
+  {
+   "id": "A-05",
+   "n": "Student Portal",
+   "ty": "Student portal",
+   "sw": "Spring Boot 5.3.10",
+   "env": "Public Web",
+   "up": "2026-10-07",
+   "mt": "Confirmed match",
+   "rs": "Needs Verification",
+   "imp": 3
+  },
+  {
+   "id": "A-06",
+   "n": "ERP Application",
+   "ty": "ERP application",
+   "sw": "Java / Log4j 2.14.0",
+   "env": "Admin Systems",
+   "up": "2026-10-04",
+   "mt": "Confirmed match",
+   "rs": "In Progress",
+   "imp": 3
+  },
+  {
+   "id": "A-07",
+   "n": "Campus Firewall",
+   "ty": "Servers",
+   "sw": "PAN-OS 11.0",
+   "env": "Network",
+   "up": "2026-10-09",
+   "mt": "Possible match – verify",
+   "rs": "Open",
+   "imp": 2
+  },
+  {
+   "id": "A-08",
+   "n": "Library System / Cloud VM",
+   "ty": "Library system",
+   "sw": "Ubuntu 22.04 / OpenSSH 8.9",
+   "env": "Library",
+   "up": "2026-09-28",
+   "mt": "Possible match – verify",
+   "rs": "Resolved",
+   "imp": 2
+  },
+  {
+   "id": "A-09",
+   "n": "Cloud Object Storage",
+   "ty": "Cloud resources",
+   "sw": "Managed service",
+   "env": "Cloud",
+   "up": "—",
+   "mt": "Asset not assessed",
+   "rs": "Open",
+   "imp": 1
+  }
+ ],
+ "T": [
+  {
+   "id": "T-1",
+   "v": "CVE-2023-38831",
+   "a": "Lab PC Cluster (CS Dept)",
+   "pri": "High",
+   "act": "Update WinRAR to 6.23 or later.",
+   "st": "Open",
+   "tm": "Infra Team",
+   "due": "2026-10-05",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-2",
+   "v": "CVE-2023-38831",
+   "a": "Faculty Laptops (Admin)",
+   "pri": "High",
+   "act": "Update WinRAR to 6.23 or later.",
+   "st": "In Progress",
+   "tm": "Web Team",
+   "due": "2026-10-14",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-3",
+   "v": "CVE-2024-21413",
+   "a": "Faculty Laptops (Admin)",
+   "pri": "Critical",
+   "act": "Install the February 2024 Microsoft update.",
+   "st": "In Progress",
+   "tm": "App Team",
+   "due": "2026-10-20",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-4",
+   "v": "CVE-2024-3094",
+   "a": "Linux Server LX-01",
+   "pri": "High",
+   "act": "Downgrade to 5.4.x or install the distribution-patched package.",
+   "st": "Open",
+   "tm": "Desktop Support",
+   "due": "2026-10-28",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-5",
+   "v": "CVE-2024-6387",
+   "a": "Linux Server LX-01",
+   "pri": "Medium",
+   "act": "Upgrade to OpenSSH 9.8p1.",
+   "st": "Open",
+   "tm": "Infra Team",
+   "due": "2026-10-05",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-6",
+   "v": "CVE-2024-4577",
+   "a": "College Website",
+   "pri": "Critical",
+   "act": "Upgrade PHP to 8.3.8 / 8.2.20 / 8.1.29 or later.",
+   "st": "Open",
+   "tm": "Web Team",
+   "due": "2026-10-14",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-7",
+   "v": "CVE-2023-44487",
+   "a": "College Website",
+   "pri": "High",
+   "act": "Apply vendor patches; add rate limits.",
+   "st": "Open",
+   "tm": "App Team",
+   "due": "2026-10-20",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-8",
+   "v": "CVE-2022-22965",
+   "a": "Student Portal",
+   "pri": "Critical",
+   "act": "Upgrade to Spring Framework 5.3.18 / 5.2.20.",
+   "st": "Needs Verification",
+   "tm": "Desktop Support",
+   "due": "2026-10-28",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-9",
+   "v": "CVE-2021-44228",
+   "a": "ERP Application",
+   "pri": "Critical",
+   "act": "Upgrade to Log4j 2.17.1 or later.",
+   "st": "In Progress",
+   "tm": "Infra Team",
+   "due": "2026-10-05",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-10",
+   "v": "CVE-2024-3400",
+   "a": "Campus Firewall",
+   "pri": "Critical",
+   "act": "Apply vendor hotfix per advisory.",
+   "st": "Open",
+   "tm": "Web Team",
+   "due": "2026-10-14",
+   "ver": "Pending"
+  },
+  {
+   "id": "T-11",
+   "v": "CVE-2021-44228",
+   "a": "Library System / Cloud VM",
+   "pri": "Critical",
+   "act": "Upgrade to Log4j 2.17.1 or later.",
+   "st": "Resolved",
+   "tm": "App Team",
+   "due": "2026-10-20",
+   "ver": "Verified"
+  },
+  {
+   "id": "T-12",
+   "v": "CVE-2024-6387",
+   "a": "Library System / Cloud VM",
+   "pri": "Medium",
+   "act": "Upgrade to OpenSSH 9.8p1.",
+   "st": "Resolved",
+   "tm": "Desktop Support",
+   "due": "2026-10-28",
+   "ver": "Verified"
+  }
+ ],
+ "EV": [
+  {
+   "id": "EV-2001",
+   "dev": "PC-LAB-014",
+   "ty": "Repeated failed logins",
+   "ts": "2026-10-09 09:12",
+   "sev": "Medium",
+   "d": "12 failed sign-ins in 4 min on a lab account.",
+   "st": "Open",
+   "steps": "Check account lockout, source IP and user."
+  },
+  {
+   "id": "EV-2002",
+   "dev": "SRV-LX-01",
+   "ty": "Unusual process execution",
+   "ts": "2026-10-09 02:40",
+   "sev": "High",
+   "d": "Unexpected shell spawned by web service user.",
+   "st": "Investigating",
+   "steps": "Review process tree and recent deployments."
+  },
+  {
+   "id": "EV-2003",
+   "dev": "PC-FAC-007",
+   "ty": "Malware alert from security tool",
+   "ts": "2026-10-08 16:05",
+   "sev": "High",
+   "d": "Endpoint tool flagged a downloaded archive.",
+   "st": "Investigating",
+   "steps": "Isolate device, confirm detection, scan."
+  },
+  {
+   "id": "EV-2004",
+   "dev": "SRV-WEB-02",
+   "ty": "Unexpected network connection",
+   "ts": "2026-10-08 11:22",
+   "sev": "Medium",
+   "d": "Outbound connection to unfamiliar IP on port 4444.",
+   "st": "Open",
+   "steps": "Check destination reputation and firewall logs."
+  },
+  {
+   "id": "EV-2005",
+   "dev": "FW-CORE-01",
+   "ty": "Configuration change",
+   "ts": "2026-10-07 18:30",
+   "sev": "Low",
+   "d": "Firewall rule added outside change window.",
+   "st": "Closed – benign",
+   "steps": "Compare with change ticket (verified)."
+  },
+  {
+   "id": "EV-2006",
+   "dev": "SRV-FILE-01",
+   "ty": "Suspicious file activity",
+   "ts": "2026-10-07 13:48",
+   "sev": "Medium",
+   "d": "Rapid mass file renames in a shared folder.",
+   "st": "Open",
+   "steps": "Check backups; inspect user session."
+  }
+ ],
+ "AL": [
+  {
+   "id": "AL-101",
+   "t": "Log4j library found on ERP host",
+   "as": "ERP Application",
+   "sev": "Critical",
+   "tm": "10 min ago",
+   "st": "New",
+   "nx": "Upgrade Log4j to 2.17.1+; verify no JNDI callbacks."
+  },
+  {
+   "id": "AL-102",
+   "t": "KEV-listed flaw matches PHP version",
+   "as": "College Website",
+   "sev": "Critical",
+   "tm": "1 h ago",
+   "st": "Investigating",
+   "nx": "Schedule PHP upgrade; restrict CGI exposure."
+  },
+  {
+   "id": "AL-103",
+   "t": "Possible PAN-OS version match",
+   "as": "Campus Firewall",
+   "sev": "High",
+   "tm": "3 h ago",
+   "st": "New",
+   "nx": "Confirm firmware version in console."
+  },
+  {
+   "id": "AL-104",
+   "t": "OpenSSH version in affected range",
+   "as": "Linux Server LX-01",
+   "sev": "High",
+   "tm": "Yesterday",
+   "st": "Acknowledged",
+   "nx": "Upgrade OpenSSH to 9.8p1."
+  },
+  {
+   "id": "AL-105",
+   "t": "Outdated WinRAR on lab PCs",
+   "as": "Lab PC Cluster",
+   "sev": "Medium",
+   "tm": "Yesterday",
+   "st": "New",
+   "nx": "Push software update via endpoint tool."
+  }
+ ]
+}

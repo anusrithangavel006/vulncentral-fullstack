@@ -1,0 +1,9 @@
+services:
+  vulncentral:
+    build: .
+    ports: ["8080:8080"]
+    env_file: .env
+    volumes: ["vulndata:/data"]
+    restart: unless-stopped
+volumes:
+  vulndata:

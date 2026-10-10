@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vulncentral
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    disk: { name: vulndata, mountPath: /data, sizeGB: 1 }
+    envVars:
+      - { key: ADMIN_TOKEN, generateValue: true }
+      - { key: AUTO_INGEST, value: "true" }
+      - { key: DB_PATH, value: /data/vulncentral.db }
